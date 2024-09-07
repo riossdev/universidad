@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body class="bg-[#F0F0F0] w-screen h-screen">
+    <nav class="bg-white shadow-lg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+          <!-- Logo -->
+          <div class="flex-shrink-0 font-bold text-3xl">
+            <a href="#">
+              LOGO
+            </a>
+          </div>
+
+          <div class="hidden md:flex space-x-8">
+            <a href="/registro.html" class="text-gray-700 hover:text-purple-600">Registro</a>
+            <a href="/productos.html" class="text-gray-700 hover:text-purple-600">Productos</a>
+            
+          </div>
+
+          <!-- Cart -->
+          <div class="flex items-center">
+            <a href="#" class="text-gray-700 hover:text-purple-600">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.5l.75 9.75a3 3 0 003 3h10.5a3 3 0 003-3L20.25 6h-15M6 10.5h12m-3.75 4.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zm-6 0a1.5 1.5 0 110 3 1.5 1.5 0 010-3z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    <section class="bg-white mx-auto max-w-md  shadow rounded-md mt-4">
+      <h1 class="text-center text-3xl font-bold mb-8 mt-8" >Registro</h1>
+      <form action="" class="flex flex-col space-y-5 py-12 px-16">
+        <label for="" class="block text-sm uppercase text-gray-500 font-bold"
+          >Nombre</label
+        >
+        <input
+          type="text"
+          placeholder="Nombre"
+          class="w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400"
+        />
+        <label for="" class="block text-sm uppercase text-gray-500 font-bold"
+        >Correo</label
+      >
+      <input
+      type="text"
+      placeholder="Nombre"
+      class="w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400"
+    />
+      <label
+        for=""
+        class="block text-sm uppercase text-gray-500 font-bold mb-3"
+        >teléfono</label
+      >
+      <input
+        type="text"
+        placeholder="Nombre"
+        class="w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400"
+      />
+        <label
+          for=""
+          class="block text-sm uppercase text-gray-500 font-bold mb-3"
+          >Contraeña</label
+        >
+        <input
+          type="password"
+          placeholder="Password"
+          class="w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400"
+        />
+
+        <button
+          class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3"
+        >
+          Login
+        </button>
+      
+      </form>
+    </section>
+   
+  </body>
+</html>

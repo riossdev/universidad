@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <title>Document</title>
-</head>
-<body>
-  <h1 class="text-center">Hello word!</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body class="bg-[#F0F0F0] w-screen h-screen">
+    <main class="w-full h-full flex justify-center items-center">
+      <section class="bg-white mx-auto max-w-md  shadow rounded-md">
+        <h1 class="text-center text-3xl font-bold mb-8 mt-8" >Login</h1>
+        <form action="" class="flex flex-col space-y-5 py-12 px-16">
+          <label for="" class="block text-sm uppercase text-gray-500 font-bold"
+            >Username</label
+          >
+          <input
+            type="text"
+            placeholder="Nombre"
+            class="w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400"
+          />
+          <label
+            for=""
+            class="block text-sm uppercase text-gray-500 font-bold mb-3"
+            >Password</label
+          >
+          <input
+            type="password"
+            placeholder="Password"
+            class="w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400"
+          />
+
+          <button
+            class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3"
+          >
+            Login
+          </button>
+          <div class="flex gap-4">
+            <input type="checkbox" id="cbox2" value="second_checkbox" />
+            <label for="cbox2" class="text-sm text-gray-500"
+              >Remenber me</label
+            >
+          </div>
+          <div class="w-full flex justify-evenly">
+            <img src="/public/logo/logo.png" width="20px" height="15px" alt="">
+            <p class="text-gray-500 text-sm bottom-0">Sing in with Google </p>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
