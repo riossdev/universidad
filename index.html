@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <title>Login</title>
   </head>
   <body class="bg-[#F0F0F0] w-screen h-screen">
     <main class="w-full h-full flex justify-center items-center">
@@ -53,6 +53,43 @@
           </div>
         </form>
       </section>
+
+      <script>
+       
+        function validarFormulario(event) {
+          event.preventDefault(); 
+      
+          
+          const username = document.querySelector('input[type="text"]').value;
+          const password = document.querySelector('input[type="password"]').value;
+      
+          const usernameRegex = /^[a-zA-Z0-9]{3,20}$/; // Solo letras y números, entre 3 y 20 caracteres
+          const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/; // Al menos 8 caracteres, letras y números
+      
+          let errores = [];            
+           
+           
+          if (!usernameRegex.test(username)) {
+            errores.push("El nombre de usuario debe tener entre 3 y 20 caracteres y solo contener letras y números.");
+          }
+      
+         
+          if (!passwordRegex.test(password)) {
+            errores.push("La contraseña debe tener al menos 8 caracteres y contener letras y números.");
+          }
+
+          if (errores.length > 0) {
+            alert(errores.join("\n"));
+          } else {
+            alert("Formulario válido. Procesando login...");
+           
+          }
+        }
+      
+        
+        document.querySelector('form').addEventListener('submit', validarFormulario);
+      </script>
+      
     </main>
   </body>
 </html>
